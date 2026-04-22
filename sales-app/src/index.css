@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f3f4f6;
+  color: #000;
+}
+
+@layer components {
+  /* Wireframe Container */
+  .wf-window {
+    @apply bg-white border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] overflow-hidden;
+  }
+
+  /* Window Title Bar */
+  .wf-title-bar {
+    @apply bg-[#e0e0e0] border-b-2 border-black flex items-center p-2 relative;
+  }
+
+  .wf-dots {
+    @apply flex gap-1 mr-4;
+  }
+
+  .wf-dot {
+    @apply w-3 h-3 rounded-full border border-black;
+  }
+
+  /* Toolbar */
+  .wf-toolbar {
+    @apply p-2 border-b-2 border-black bg-white;
+  }
+
+  /* Buttons */
+  .wf-btn {
+    @apply px-4 py-1 border-2 border-black rounded-lg font-bold flex items-center gap-2 hover:bg-gray-100 transition-colors;
+  }
+
+  /* Inputs */
+  .wf-input {
+    @apply border-2 border-black px-2 py-1 outline-none w-full bg-white font-medium focus:bg-blue-50;
+  }
+
+  .wf-label {
+    @apply font-bold text-sm min-w-[120px] inline-block;
+  }
+
+  /* Table */
+  .wf-table {
+    @apply w-full border-collapse;
+  }
+
+  .wf-table th {
+    @apply border-2 border-black bg-[#d9d9d9] px-2 py-2 text-left font-bold text-sm;
+  }
+
+  .wf-table td {
+    @apply border-2 border-black px-2 py-1 text-sm bg-white;
+  }
+
+  /* Layout Spacing */
+  .wf-field-group {
+    @apply flex items-center gap-2 mb-2;
+  }
+}

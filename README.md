@@ -1,3 +1,5 @@
+
+
 ### Backend
 1. Navigate to `SalesOrderBackend/SalesOrderAPI`.
 2. Run `dotnet run`.
@@ -9,3 +11,5 @@
 3. Run `npm start`.
 4. The application will be available at `http://localhost:3000`.
 
+### Database
+This project uses a local database: SQL Server LocalDB (`(localdb)\\mssqllocaldb`) with the database name `SalesOrderDb`.
